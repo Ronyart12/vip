@@ -252,7 +252,7 @@ read -p "   INPUT YOUR DOMAIN :   " host1
 echo "IP=${host1}" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
-echo ".::. SANGGAR .::." > /etc/xray/username
+echo ".::. SANGGAR PREMIUM .::." > /etc/xray/username
 echo ""
 elif [[ $host == "2" ]]; then
 wget ${REPO}Fls/cf.sh && chmod +x cf.sh && ./cf.sh
