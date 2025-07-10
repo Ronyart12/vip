@@ -8,7 +8,7 @@ detect_os() {
   fi
 }
 os_version=$(detect_os)
-if [[ "$os_version" =~ ubuntu\ 24\.0[4|10] ]]; then
+if [[ "$os_version" =~ ubuntu\ 24\.[04|10] ]]; then
   RSYSLOG_FILE="/etc/rsyslog.d/50-default.conf"
 elif [[ "$os_version" == "debian 12" ]]; then
   RSYSLOG_FILE="/etc/rsyslog.conf"
