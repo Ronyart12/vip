@@ -845,7 +845,7 @@ END
 cat >/etc/cron.d/logclean <<-END
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-*/10 * * * * root /usr/local/sbin/clearlog
+*/10 * * * * root truncate -s 0 /var/log/syslog && truncate -s 0 /var/log/nginx/error.log && truncate -s 0 /var/log/nginx/access.log && truncate -s 0 /var/log/xray/error.log && truncate -s 0 /var/log/xray/access.log
 END
 chmod 644 /root/.profile
 cat >/etc/cron.d/daily_reboot <<-END
