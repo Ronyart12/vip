@@ -1,6 +1,7 @@
  
-### CHANGE AUTO ROOT FOR DEBIAN & UBUNTU 22.04 THANKS FOR MAINTEBOT
-<pre><code>apt install wget -y && rm -f gasss-root.sh && apt install wget whois -y && wget https://raw.githubusercontent.com/maintebot/change-root/main/gasss-root.sh && chmod +x gasss-root.sh && ./gasss-root.sh && rm gasss-root.sh</code></pre>
+### WAJIB ISI INI SEBELUM INSTALASI 
+<pre><code>sudo apt update && sudo apt upgrade -y && sudo timedatectl set-timezone Asia/Jakarta && sudo apt install curl wget git sudo -y
+</code></pre>
 
 ### INSTALL SCRIPT 
 <pre><code>apt update -y && apt install -y wget curl jq screen && wget -q https://raw.githubusercontent.com/Ronyart12/vip/main/setup.sh && chmod +x setup.sh && ./setup.sh
