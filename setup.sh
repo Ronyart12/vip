@@ -818,7 +818,7 @@ welcome
 EOF
 
 cat >/etc/cron.d/daily_backup <<-END
-		0 16 * * * root /usr/local/bin/daily_backup
+		0 14,21 * * * root /usr/local/bin/daily_backup
 	END
 
 cat >/usr/local/bin/daily_backup <<-END
