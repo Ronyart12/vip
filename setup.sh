@@ -80,6 +80,7 @@ clear
 rm -f /usr/bin/user
 username=$(curl https://raw.githubusercontent.com/Ronyart12/izin/main/ip | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
+echo "$username" >/etx/xray/username
 expx=$(curl https://raw.githubusercontent.com/Ronyart12/izin/main/ip | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 username=$(cat /usr/bin/user)
@@ -688,7 +689,7 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # install udp-custom
 echo downloading udp-custom
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1_VyhL5BILtoZZTW4rhnUiYzc4zHOsXQ8' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1_VyhL5BILtoZZTW4rhnUiYzc4zHOsXQ8" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
+#wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1_VyhL5BILtoZZTW4rhnUiYzc4zHOsXQ8' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1_VyhL5BILtoZZTW4rhnUiYzc4zHOsXQ8" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
 chmod +x /root/udp/udp-custom
 
 echo downloading default config
